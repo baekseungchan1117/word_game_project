@@ -1,0 +1,4 @@
+[build]
+  publish = "word_chain_game/build"
+  functions = "netlify-functions"
+  proxy = "/api/*  http://localhost:8000/:splat 200"
