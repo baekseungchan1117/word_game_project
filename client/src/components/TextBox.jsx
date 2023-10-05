@@ -25,7 +25,7 @@ const TextBox = ({ incrementScore, resetTimer }) => {
         return;
       }
 
-      fetch(`http://localhost:8000/search?q=${encodeURIComponent(text)}`)
+      fetch(`https://port-0-word-game-project-euegqv2blncvirzp.sel5.cloudtype.app/search?q=${encodeURIComponent(text)}`)
         .then((res) => res.json())
         .then((data) => {
           // console.log(data);  // 이 로그를 추가하여 전체 데이터 구조를 확인
